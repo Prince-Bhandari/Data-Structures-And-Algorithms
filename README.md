@@ -34,3 +34,14 @@ Started with straightforward approaches using a List and then a Stack. Both solu
 Next step: explore the recursive solution and the optimal approach using two pointers and in-place reversal for this problem.
 
 ---
+
+### Day 5 – 08/06/2026
+Today's focus was on Palindrome Linked List.  
+✅ Solved using the optimal two-pointer approach:  
+Found the middle using slow & fast pointers  
+Reversed the second half of the linked list in-place  
+Compared both halves for palindrome validation  
+Achieved O(n) time and O(1) extra space, improving over stack/list-based approaches.  
+Also explored a recursive solution, which was elegant but used extra call stack space.
+
+---
