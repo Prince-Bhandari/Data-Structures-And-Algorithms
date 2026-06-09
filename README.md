@@ -45,3 +45,18 @@ Achieved O(n) time and O(1) extra space, improving over stack/list-based approac
 Also explored a recursive solution, which was elegant but used extra call stack space.
 
 ---
+
+### Day 6 - 09/06/2026
+Today I solved two Linked List problems:  
+✅ Remove Linked List Elements (LeetCode 203)  
+Initially created a new filtered list → O(n) time, O(n) space.  
+Realized the list could be modified in-place unless stated otherwise.  
+Optimized to O(n) time, O(1) space.  
+✅ Rotate List (LeetCode 61)  
+Converted the list into a circular linked list.  
+Used k % n and pointer math to find the new head and tail.  
+Broke the circle to get the rotated list.  
+Achieved O(n) time, O(1) space.
+
+---
+
