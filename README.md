@@ -109,6 +109,45 @@ Achieved O(n) time, O(1) space.
 
 ---
 
+### 📋 Day 7 - 10/06/2026
+Today I solved two math problems:  
+✅ [Happy Number](./Math/Happy_Number.java)  
+I used Floyd's Cycle Detection Algorithm (Tortoise & Hare); similar concept that was used in linked lists problems.  
+The idea is to repeatedly replace the number with the sum of the squares of its digits. If the number is happy, the sequence eventually reaches 1; otherwise, it enters a cycle.  
+Using slow and fast pointers allowed cycle detection without extra memory hence achieving O(1) space complexity along with O(log n) time complexity.  
+✅ [Plus One](./Array/Plus_One.java)  
+What I particularly enjoyed about this problem was analyzing its complexity. At first glance it looks like an O(n) solution, but looking deeper revealed that while the worst case is O(n), both the best and average cases are O(1) because the algorithm usually stops after examining only a few digits.  
+
+Another day of strengthening problem-solving skills while revisiting cycle detection patterns and analyzing algorithm complexities more deeply.
+
+---
+
+### 📋 Day 8 - 11/06/2026  
+✅ Solved [Excel Sheet Column Number](./Math/Excel_Sheet_Column_Number.java) today.  
+The key insight was recognizing it as a base-26 conversion problem. The column string can be viewed as a polynomial in base 26, and I used Horner's Method to evaluate it efficiently.  
+Horner's method evaluates a degree n polynomial using only n multiplications and n additions, which is optimal. In contrast, evaluating the polynomial directly in monomial form requires at most n additions and (n^2+n)/2 multiplications.  
+
+---
+
+### 📋 Day 9 - 12/06/2026  
+✅ Today I worked on [Nth Digit](./Math/Nth_Digit.java). It was quite challenging. I could only think of a brute-force approach initially, but that quickly became impractical since it would require generating a gigantic list of digits. The actual solution involves some interesting mathematics: identifying the correct digit-length block, locating the exact number within that block, and then extracting the required digit. While I understand the overall approach now, the mathematical reasoning behind it is still something I need to revisit and practice more to become comfortable applying it on my own.  
+✅ I also reviewed the [Bulb Switcher](./Math/Bulb_Switcher.java) problem and finally understood the intuition behind it. Before looking at the solution, I tried finding a pattern by manually solving for different values of n.  
+The key observation is that a bulb is toggled once for each factor of its index.  
+For example, bulb 6 has factors 1, 2, 3, and 6:  
+Round 1 → ON  
+Round 2 → OFF  
+Round 3 → ON  
+Round 6 → OFF  
+Since it is toggled 4 times (an even number), it ends up OFF.  
+Bulb 9 has factors 1, 3, and 9:  
+Round 1 → ON  
+Round 3 → OFF  
+Round 9 → ON  
+Since it is toggled 3 times (an odd number), it ends up ON.  
+Most numbers have factors that come in pairs, which gives them an even number of factors and therefore an even number of toggles. Perfect squares are the exception because one factor pair collapses into a single factor giving them an odd number of factors. As a result, only bulbs at perfect square positions remain ON after the final round.  
+
+---
+
 <br>
 
 ### 📝 License
