@@ -109,8 +109,7 @@ Achieved O(n) time, O(1) space.
 
 ---
 
-### 📋 Day 7
-Today I solved two math problems:  
+### 📋 Day 7 
 ✅ [Happy Number](./Math/Happy_Number.java)  
 I used Floyd's Cycle Detection Algorithm (Tortoise & Hare); similar concept that was used in linked lists problems.  
 The idea is to repeatedly replace the number with the sum of the squares of its digits. If the number is happy, the sequence eventually reaches 1; otherwise, it enters a cycle.  
@@ -149,7 +148,6 @@ Most numbers have factors that come in pairs, which gives them an even number of
 ---
 
 ### 📋 Day 10
-Today's focus: Linked Lists  
 ✅ [Odd Even Linked List](./Linked_List/Odd_Even_Linked_List.java) - A straightforward problem that reinforced pointer manipulation and list restructuring.  
 ✅ [Swapping Nodes in a Linked List](./Linked_List/Swapping_Nodes_in_a_Linked_List.java) - My first solution used 3 traversals and achieved O(n) time, but I knew it wasn't the most efficient approach. I then optimized it using a one-pass two-pointer technique to locate the kth node from both ends.  
 ✅ [Delete the Middle Node of a Linked List](./Linked_List/Delete_the_Middle_Node_of_a_Linked_List.java) - Solved using Floyd's Fast & Slow Pointer technique. The slow pointer identifies the middle node while the fast pointer traverses the list at twice the speed, allowing the middle node to be removed efficiently in a single traversal.  
@@ -258,6 +256,18 @@ Space Complexity: O(1)
 ✅ [Evaluate Reverse Polish Notation](./Stack/Evaluate_Reverse_Polish_Notation.java) - Here, I learned to handle datatypes using Casting ((int)) and parsing (Integer.parseInt()). 
 
 ---
+
+✅ [Infix to RPN Conversion](./Stack/Infix_to_RPN_Conversion.java) - Compilers convert standard infix notation into RPN using algorithms like the Shunting-yard algorithm.
+
+![Shunting-yard Algorithm](./img/Shunting-yard-Algorithm.png)
+The input is processed one symbol at a time.  
+If a variable or number is found, it is copied directly to the output. 
+If the symbol is an operator, it is pushed onto the operator stack.  
+   If the operator's precedence is lower than that of the operators at the top of the stack or the precedences are equal and the operator is left associative, then that operator is popped off the stack and added to the output.  
+Finally, any remaining operators are popped off the stack and added to the output.
+
+---
+
 ### 📝 License
 This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
