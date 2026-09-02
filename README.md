@@ -268,6 +268,12 @@ Finally, any remaining operators are popped off the stack and added to the outpu
 
 ---
 
+✅ [Next Greater Element-I](./Stack/Next_Greater_Element-I.java) - First I solved it using brute force, but then I learned to optimize it using HashMap and Monotonic Stack.  
+Time Complexity: O(m+n) - one pass over nums1 and nums2  
+Space Complexity: O(n) - for the HashMap, Stack and result array
+
+---
+
 ### 📝 License
 This project is licensed under the **MIT License** - see the [LICENSE](./LICENSE) file for details.
 
